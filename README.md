@@ -1,47 +1,57 @@
 # Orca Profiles
 
-Repositorio de perfiles personalizados para **OrcaSlicer**, organizados por tipo de ajuste para facilitar su mantenimiento y reutilización.
+Colección de perfiles personalizados para **OrcaSlicer**, pensada para cargar ajustes listos como punto de partida y reducir el tiempo de configuración manual.
 
-## Estructura
+## Qué incluye este repositorio
 
-- `machine/`: perfiles de impresora y extrusor.
-- `filament/`: perfiles de material y variantes ajustadas.
-- `process/`: perfiles de proceso de impresión.
+- `machine/`: perfil de máquina para `Creality Ender-3 Pro 0.4 nozzle - ED`
+- `filament/`: perfiles de filamento como `Creality CR-PETG`, `Creality CR-PETG (Ajustado)`, `Creality CR-PETG (Ajustado V2)` y `Sain Smart TPU`
+- `process/`: perfil de proceso `0.20mm Standard @Creality Ender3 Pro 0.4 - Custom`
 
-Cada perfil suele tener dos archivos con el mismo nombre base:
+Cada perfil se guarda como:
 
-- `*.json`: configuración del perfil.
-- `*.info`: metadatos asociados usados por OrcaSlicer.
+- `*.json`: ajustes del perfil
+- `*.info`: metadatos de OrcaSlicer
 
-## Perfiles incluidos
+## Para quién es
 
-- Máquina: `Creality Ender-3 Pro 0.4 nozzle - ED`
-- Filamentos: `Creality CR-PETG`, `Creality CR-PETG (Ajustado)`, `Creality CR-PETG (Ajustado V2)`, `Sain Smart TPU`
-- Proceso: `0.20mm Standard @Creality Ender3 Pro 0.4 - Custom`
+Este repositorio está orientado a usuarios de OrcaSlicer que quieran usar perfiles ya ajustados para una **Creality Ender-3 Pro** con boquilla de `0.4 mm`, especialmente para PETG y TPU.
 
-## Uso
+## Cómo usarlos en OrcaSlicer
 
-1. Abre OrcaSlicer.
-2. Importa o copia los perfiles correspondientes.
-3. Verifica que las herencias (`inherits`) apunten al perfil base esperado.
-4. Revisa temperaturas, retracción, ventilación y soportes antes de imprimir.
+1. Descarga o clona este repositorio.
+2. Localiza el tipo de perfil que necesitas: máquina, filamento o proceso.
+3. Importa los archivos en OrcaSlicer o copia los perfiles a tu biblioteca local.
+4. Selecciona la combinación adecuada de máquina, filamento y proceso.
+5. Revisa los ajustes clave antes de imprimir.
 
-## Validación recomendada
+## Instalación manual
 
-Antes de subir cambios, conviene validar los archivos localmente:
+Si prefieres copiar los perfiles directamente, mantén juntos los pares `.json` y `.info` dentro de la carpeta correspondiente de OrcaSlicer.
 
-```bash
-jq . filament/*.json machine/*.json process/*.json
-git diff -- filament/ machine/ process/
-git status --short
-```
+Rutas habituales de perfiles de usuario:
 
-## Convenciones
+- Windows: `%AppData%\\OrcaSlicer\\user\\default\\`
+- macOS: `~/Library/Application Support/OrcaSlicer/user/default/`
+- Linux: `~/.config/OrcaSlicer/user/default/`
+- Linux (Flatpak): `~/.var/app/io.github.softfever.OrcaSlicer/config/OrcaSlicer/user/default/`
 
-- Mantener juntos los pares `.json` y `.info`.
-- Respetar la indentación existente en JSON de 4 espacios.
-- Usar nombres descriptivos alineados con el campo `name` interno del perfil.
+Dentro de esa ubicación, coloca cada archivo en su categoría:
 
-## Objetivo
+- `machine/` para perfiles de impresora
+- `filament/` para perfiles de material
+- `process/` para perfiles de proceso
 
-Centralizar perfiles ajustados para una **Creality Ender-3 Pro** con boquilla de `0.4 mm`, incluyendo configuraciones de materiales y procesos listos para afinar y reutilizar.
+Si tu instalación usa otro directorio o varios perfiles de usuario, verifica la ruta exacta desde la configuración local de OrcaSlicer.
+
+## Qué revisar antes de imprimir
+
+- Que el perfil de máquina coincida con tu impresora y extrusor.
+- Que el filamento seleccionado corresponda al material real cargado.
+- Que las temperaturas de boquilla y cama sean adecuadas para tu lote de material.
+- Que la retracción, ventilación y soportes encajen con tu montaje.
+- Que la herencia (`inherits`) apunte a un perfil base disponible en tu instalación.
+
+## Recomendación
+
+Usa estos perfiles como base, no como ajuste universal. Haz una prueba corta antes de una impresión larga y guarda tus variantes si cambias temperatura, flujo o retracción.
