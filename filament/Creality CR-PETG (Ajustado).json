@@ -1,0 +1,30 @@
+{
+    "enable_overhang_bridge_fan": [
+        "0"
+    ],
+    "fan_max_speed": [
+        "30"
+    ],
+    "fan_min_speed": [
+        "20"
+    ],
+    "filament_extruder_variant": [
+        "Direct Drive Standard"
+    ],
+    "filament_max_volumetric_speed": [
+        "14"
+    ],
+    "filament_settings_id": [
+        "Creality CR-PETG (Ajustado)"
+    ],
+    "from": "User",
+    "inherits": "Creality Generic PETG",
+    "name": "Creality CR-PETG (Ajustado)",
+    "nozzle_temperature": [
+        "230"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "230"
+    ],
+    "version": "2.3.1.10"
+}

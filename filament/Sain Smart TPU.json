@@ -1,0 +1,21 @@
+{
+    "compatible_printers": [
+        "Creality Ender-3 Pro 0.4 nozzle"
+    ],
+    "filament_extruder_variant": [
+        "Direct Drive Standard"
+    ],
+    "filament_settings_id": [
+        "Sain Smart TPU"
+    ],
+    "from": "User",
+    "inherits": "Generic TPU @System",
+    "name": "Sain Smart TPU",
+    "nozzle_temperature": [
+        "220"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "220"
+    ],
+    "version": "2.3.2.50"
+}
