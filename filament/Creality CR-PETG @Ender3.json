@@ -15,11 +15,11 @@
         "8"
     ],
     "filament_settings_id": [
-        "Creality CR-PETG (Ajustado V2)"
+        "Creality CR-PETG @Ender3"
     ],
     "from": "User",
     "inherits": "Creality Generic PETG",
-    "name": "Creality CR-PETG (Ajustado V2)",
+    "name": "Creality CR-PETG @Ender3",
     "nozzle_temperature": [
         "230"
     ],

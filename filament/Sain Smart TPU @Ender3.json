@@ -6,11 +6,11 @@
         "Direct Drive Standard"
     ],
     "filament_settings_id": [
-        "Sain Smart TPU"
+        "Sain Smart TPU @Ender3"
     ],
     "from": "User",
     "inherits": "Generic TPU @System",
-    "name": "Sain Smart TPU",
+    "name": "Sain Smart TPU @Ender3",
     "nozzle_temperature": [
         "220"
     ],
