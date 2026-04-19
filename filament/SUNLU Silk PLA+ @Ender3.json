@@ -1,0 +1,21 @@
+{
+    "compatible_printers": [
+        "Creality Ender-3 Pro 0.4 nozzle"
+    ],
+    "filament_extruder_variant": [
+        "Direct Drive Standard"
+    ],
+    "filament_settings_id": [
+        "SUNLU Silk PLA+ @Ender3"
+    ],
+    "from": "User",
+    "inherits": "SUNLU Silk PLA+ @System",
+    "name": "SUNLU Silk PLA+ @Ender3",
+    "nozzle_temperature": [
+        "210"
+    ],
+    "nozzle_temperature_initial_layer": [
+        "210"
+    ],
+    "version": "2.3.2.60"
+}

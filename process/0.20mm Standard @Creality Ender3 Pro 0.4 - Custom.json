@@ -1,6 +1,7 @@
 {
     "align_infill_direction_to_model": "1",
     "bridge_flow": "1.5",
+    "brim_type": "no_brim",
     "enable_support": "1",
     "from": "User",
     "infill_combination": "1",
