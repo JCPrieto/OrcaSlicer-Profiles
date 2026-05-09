@@ -5,15 +5,12 @@
     "filament_extruder_variant": [
         "Direct Drive Standard"
     ],
-    "filament_max_volumetric_speed": [
-        "20"
-    ],
     "filament_settings_id": [
-        "SUNLU Silk PLA+ @Ender3"
+        "SUNLU PLA+ @Ender3"
     ],
     "from": "User",
-    "inherits": "SUNLU Silk PLA+ @System",
-    "name": "SUNLU Silk PLA+ @Ender3",
+    "inherits": "SUNLU PLA+ @System",
+    "name": "SUNLU PLA+ @Ender3",
     "nozzle_temperature": [
         "210"
     ],
